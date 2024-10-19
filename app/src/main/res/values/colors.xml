@@ -21,5 +21,6 @@
     <color name="main_light">#BA47A2ED</color>
     <color name="main_vlight">#F36CBAFA</color>
     <color name="bad_color">#a60909</color>
+    <color name="test">#f8c967</color>
 
 </resources>

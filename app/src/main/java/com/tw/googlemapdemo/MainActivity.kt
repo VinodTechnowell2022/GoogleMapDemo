@@ -30,6 +30,7 @@ import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.BitmapDescriptorFactory
 import com.google.android.gms.maps.model.LatLng
+import com.google.android.gms.maps.model.MapStyleOptions
 import com.google.android.gms.maps.model.MarkerOptions
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.karumi.dexter.Dexter
@@ -282,18 +283,19 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
 
     override fun onMapReady(map: GoogleMap) {
         this.map = map
+        this.map!!.setMapStyle(MapStyleOptions.loadRawResourceStyle(this, R.raw.map_styles))
         map.mapType = GoogleMap.MAP_TYPE_NORMAL
 
+        map.uiSettings.isZoomControlsEnabled = true
+        map.uiSettings.isMapToolbarEnabled = true
         map.isBuildingsEnabled =true
         map.isIndoorEnabled =true
         map.uiSettings.isMyLocationButtonEnabled=true
         map.uiSettings.isZoomGesturesEnabled=true
-        map.uiSettings.isZoomControlsEnabled=true
         map.uiSettings.isScrollGesturesEnabledDuringRotateOrZoom=true
         map.uiSettings.isCompassEnabled = true
         map.isTrafficEnabled =true
         map.uiSettings.isIndoorLevelPickerEnabled=true
-        map.uiSettings.isMapToolbarEnabled=false
         map.setMaxZoomPreference(18.0f)
     }
 
