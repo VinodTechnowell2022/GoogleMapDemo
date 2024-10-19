@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">GoogleMapDemo</string>
+
+    <string name="location_seems_off">Location seems off</string>
+    <string name="location_mandatory">Location is mandatory for the application. Please allow access.</string>
+    <string name="go_to_locations">GOTO LOCATION</string>
+    <string name="needs_permissions">Need Permissions</string>
+    <string name="goto_settings">GOTO SETTINGS</string>
+
+    <string name="_hybrid">Hybrid</string>
+    <string name="_terrain">Terrain</string>
+    <string name="_satellite">Satellite</string>
+    <string name="change_map_layer">Change Map Layer</string>
+
+</resources>
